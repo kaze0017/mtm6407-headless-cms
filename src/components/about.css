@@ -1,0 +1,30 @@
+.wrapper{
+    width: 100vw;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.heroMessage{
+    display: flex;
+    flex-direction: row;
+    height: 700px;
+}
+.heroMessage .heroImages{flex-basis: 50%; height: 100%; position: relative;}
+.heroMessage .heroImages img{
+  border: 2px solid aliceblue;
+  position: absolute;
+  transition: scale 0.3s ease;
+}
+.heroMessage .heroImages img:hover{scale: 1.2;}
+.heroMessage .heroImages .heroImg1{transform: translate(0,20%);}
+.heroMessage .heroImages .heroImg2{transform: translate(70%,50%);}
+.heroMessage .heroImages .heroImg3{transform: translate(30% ,90%)}
+.heroContent{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: 2;
+}
